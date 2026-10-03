@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loki – Projects</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--text:#1d1d1f;--muted:#62666d;--accent:#2f5bea;--line:#e3e3df}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--card:#1b1d22;--text:#ececec;--muted:#9aa0a8;--accent:#7fa0ff;--line:#2a2d34}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 24px}
+h1{font-size:2.4rem;margin:0 0 8px}
+.lead{color:var(--muted);max-width:620px;margin:0 0 20px}
+.btn{display:inline-block;padding:8px 16px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);text-decoration:none;font-weight:600}
+.btn:hover{background:var(--accent);color:var(--bg)}
+h2{margin:44px 0 16px;font-size:1.3rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card h3 a{color:var(--text);text-decoration:none}
+.card h3 a:hover{color:var(--accent)}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.95rem;flex:1}
+.tags span{display:inline-block;font-size:.75rem;padding:2px 8px;margin:0 4px 4px 0;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+footer{padding:48px 0;color:var(--muted);font-size:.9rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Hi, I'm Loki 👋</h1>
+  <p class="lead">Computer science student with five years at EPITA (France) and six months at GIST (Korea). I work across graphics, computer vision, machine learning and full-stack development, and I also teach OOP and C# to first-year students.</p>
+  <a class="btn" href="https://github.com/Rorolol-creator">View my GitHub</a>
+</header>
+
+<h2>Computer vision &amp; machine learning</h2>
+<div class="grid">
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Visual_Privacy_Classification">Visual Privacy Classification</a></h3><p>Can we predict whether an image is public or private from precomputed features? A system like this could warn people before they share sensitive photos online.</p><div class="tags"><span>Python</span><span>Classification</span><span>EPITA</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/U-Net">U-Net</a></h3><p>A re-implementation of the U-Net segmentation algorithm, with notebooks, training curves and segmentation results on COCO.</p><div class="tags"><span>Jupyter</span><span>Deep learning</span><span>Segmentation</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/LPU">LPU – Butterfly classifier</a></h3><p>A butterfly classifier built with machine learning. We benchmarked several approaches, including a C++ Random Forest and a frozen deep-learning model, and compared the results.</p><div class="tags"><span>C++</span><span>Random Forest</span><span>Catch2</span><span>CMake</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/PulMetrix">PulMetrix</a></h3><p>Medical imaging app for lung segmentation and asymmetry analysis on DICOM chest X-rays. It offers automatic segmentation (TVAC) and semi-manual segmentation (Region Growing), and deploys with Docker Compose.</p><div class="tags"><span>TypeScript</span><span>Python</span><span>Docker</span><span>DICOM</span></div></div>
+</div>
+
+<h2>Graphics &amp; real-time</h2>
+<div class="grid">
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Depth-Separator">Depth-Separator</a></h3><p>A C++ depth-separation algorithm ported to CUDA and wrapped as a GStreamer plugin, so it can process video files or live camera streams.</p><div class="tags"><span>C</span><span>CUDA</span><span>GStreamer</span><span>CMake</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/POGL">POGL</a></h3><p>Particle-based fire rendering with OpenGL, in a scene with a bonfire, a cherry tree and a fireplace.</p><div class="tags"><span>C++</span><span>OpenGL</span><span>Particles</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Kinect">Kinect Paint</a></h3><p>A paint-like application controlled by an Xbox Kinect: the camera and depth map track the user's finger to draw. Includes a technical document and a user manual.</p><div class="tags"><span>Python</span><span>Kinect</span><span>Docker</span></div></div>
+</div>
+
+<h2>Web &amp; apps</h2>
+<div class="grid">
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/RemPy">RemPy</a></h3><p>A full-stack application with a backend, a database and a frontend, run together with Docker Compose.</p><div class="tags"><span>Python</span><span>Docker Compose</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Tetris">Tetris</a></h3><p>A command-line Tetris in C# with colored blocks, keyboard controls (arrows or qsd) and a scoring system.</p><div class="tags"><span>C#</span><span>Console</span></div></div>
+</div>
+
+<h2>Teaching</h2>
+<div class="grid">
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/DemoTP">DemoTP</a></h3><p>A demo practical session, prepared for the ACDC position, that teaches freshmen object-oriented programming.</p><div class="tags"><span>C#</span><span>OOP</span></div></div>
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Iterators">Iterators workshop</a></h3><p>Reference material for a workshop I designed to teach freshmen iterators in C#.</p><div class="tags"><span>C#</span><span>Workshop</span></div></div>
+</div>
+
+<h2>School projects</h2>
+<div class="grid">
+  <div class="card"><h3><a href="https://github.com/Rorolol-creator/Projects">Projects archive</a></h3><p>Work from projects whose main codebases are private: assignments from GIST (South Korea) and coursework from EPITA (France).</p><div class="tags"><span>EPITA</span><span>GIST</span></div></div>
+</div>
+
+<footer>Built with plain HTML and CSS. Source of every project is on <a href="https://github.com/Rorolol-creator">GitHub</a>.</footer>
+</div>
+</body>
+</html>
